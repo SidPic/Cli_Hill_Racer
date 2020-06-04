@@ -24,7 +24,7 @@ int main()
 
    system("xset r rate 120 8");
 
-   while(1)
+   while(true)
    {
       keyboard();
       logic();
@@ -33,9 +33,10 @@ int main()
       mvaddch(stty_height/2, stty_width/2, '@');
       refresh();
    }
+
    system("xset r rate");
    curs_set(1);
    endwin();
 
-   return 0;
+   return -1;
 }

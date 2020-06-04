@@ -12,3 +12,12 @@ char car1[3][7] =
    "|__ _\'",
    "\'o` o`"
 };
+
+void exitFoo()
+{
+   echo();
+   curs_set(1);
+   endwin();
+   system("xset r rate");
+   exit(0);
+}

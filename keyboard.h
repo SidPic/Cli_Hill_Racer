@@ -4,6 +4,9 @@ void keyboard()
 	{
       case KEY_LEFT:  buggy.x--; buggy.dir = left;  break;
       case KEY_RIGHT: buggy.x++; buggy.dir = right; break;
-      defaul: break;
+
+      case '\x1b': exitFoo(); break;
+
+      default: break;
 	}
 }

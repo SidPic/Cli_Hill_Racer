@@ -8,4 +8,6 @@ void draw()
    {
    	mvaddch(stty_height/2-buggy.y+i, stty_width/2-buggy.x+j, map[i][j]);
    }
+//   for  (char i )
+   mvaddch(stty_height/2, stty_width/2, '@');
 }

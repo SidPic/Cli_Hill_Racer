@@ -20,7 +20,8 @@ int main()
    curs_set(0);
    keypad(stdscr, 1);
    getmaxyx(stdscr, stty_height, stty_width);
-   halfdelay(1);
+   raw();
+   timeout(100);
 
    system("xset r rate 120 8");
 
@@ -30,7 +31,6 @@ int main()
       logic();
       clear();
       draw();
-      mvaddch(stty_height/2, stty_width/2, '@');
       refresh();
    }
 

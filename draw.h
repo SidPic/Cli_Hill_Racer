@@ -8,6 +8,9 @@ void draw()
    {
    	mvaddch(stty_height/2-buggy.y+i, stty_width/2-buggy.x+j, map[i][j]);
    }
-//   for  (char i )
-   mvaddch(stty_height/2, stty_width/2, '@');
+   for (char i = 0; i < buggy.height; i++)
+   for (char j = 0; j < buggy.width;  j++)
+   {
+      mvaddch(stty_height/2+i-2, stty_width/2+j, car[buggy.frame][i][j]);
+   }
 }

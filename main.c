@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <ncurses.h>
+#include <locale.h>
 
 #include "buggy.h"
 #include "map.h"
@@ -11,12 +12,16 @@
 
 int main()
 {
+   setlocale(LC_CTYPE, "");
    mapLoad("Maps/map1");
-   buggy.x = 1;
-   buggy.y = 1;
+   buggy.x = 5;
+   buggy.y = 10;
    buggy.width = 6;
    buggy.height = 3;
    buggy.frame = 0;
+   buggy.rot = 0;
+   buggy.whellFrame = 0;
+   buggy.icon = "🢂";
 
    initscr();
    noecho();

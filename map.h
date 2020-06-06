@@ -1,6 +1,6 @@
 #include <stdlib.h>
 
-#define MAP_WIDTH  1001
+#define MAP_WIDTH  1100
 #define MAP_HEIGHT 43
 
 char map[MAP_HEIGHT][MAP_WIDTH];

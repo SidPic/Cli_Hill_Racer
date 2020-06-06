@@ -3,7 +3,7 @@
 Компиляция(linux):  
  
    cd Cli_Hill_Racer*                                                                                                   
-   gcc main.c -lncurses 
+   gcc main.c -lncursesw
     
 Запуск: 
  

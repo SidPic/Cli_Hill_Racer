@@ -3,27 +3,8 @@ enum {left, right};
 struct Buggy
 {
    short x, y;
-   char width, height, dir, frame;
+   char width, height, dir, frame, whellFrame, rot, *icon;
 } buggy;
-
-char car[4][3][7] =
-{
-  {",_ \\_ ",
-   "|____;",
-   "(-)(-)"},
-
-  {",_ \\_ ",
-   "|____;",
-   "(\\)(\\)"},
-
-  {",_ \\_ ",
-   "|____;",
-   "(|)(|)"},
-
-  {",_ \\_ ",
-   "|____;",
-   "(/)(/)"}
-};
 
 void exitFoo()
 {

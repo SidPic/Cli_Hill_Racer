@@ -12,7 +12,7 @@
 
 int main()
 {
-   setlocale(LC_CTYPE, "");
+   setlocale(LC_ALL, "");
    mapLoad("Maps/map1");
    buggy.x = 5;
    buggy.y = 10;

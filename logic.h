@@ -1,6 +1,6 @@
 void logic()
 {
-   char onGround = false;
+//   char onGround = false;
 
    if (buggy.x < 0) buggy.x = 0;
    if (buggy.x >= MAP_WIDTH-2) buggy.x = MAP_WIDTH-3;
@@ -9,10 +9,10 @@ void logic()
 
    switch(map[buggy.y][buggy.x])
    {
-      case '/' : buggy.icon = "🢅";  (buggy.dir == right) ? buggy.y--, buggy.dir = left : buggy.x--; break;
-      case '\\': buggy.icon = "🢆"; (buggy.dir == right) ? buggy.x++ : buggy.y--, buggy.dir = right; break;
+      case '/' : buggy.icon = "🢅";  (buggy.dir == right) ? buggy.y--, buggy.dir = left : buggy.x--, buggy.y++; break;
+      case '\\': buggy.icon = "🢆"; (buggy.dir == left) ?  buggy.y--, buggy.dir = right : buggy.x++, buggy.y++; break;
       case '_' : buggy.icon = "🢂"; break;
-      case ' ' : buggy.y++; break;;
+      case ' ' : buggy.y++; break;
       default  : buggy.y--;
    }
 }
